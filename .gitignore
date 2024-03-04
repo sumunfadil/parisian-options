@@ -37,4 +37,4 @@ Doxyfile.*
 # Folders
 *build*
 *.vscode*
-*lib/docs/latex*
+*latex*

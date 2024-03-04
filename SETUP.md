@@ -1,7 +1,3 @@
-## About
-
-The `parisian-options` repository contains implementation of different methods used to price Parisian options.
-
 ## Folder structure
 - `lib` 
     - `docs` : documentation for function and class signatures  

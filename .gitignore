@@ -31,6 +31,10 @@
 *.out
 *.app
 
+# Files
+Doxyfile.*
+
 # Folders
 *build*
 *.vscode*
+*lib/docs/latex*

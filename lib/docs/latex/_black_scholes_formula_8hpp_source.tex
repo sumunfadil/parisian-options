@@ -1,0 +1,31 @@
+\doxysection{Black\+Scholes\+Formula.\+hpp}
+\hypertarget{_black_scholes_formula_8hpp_source}{}\label{_black_scholes_formula_8hpp_source}\index{source/include/BlackScholesFormula.hpp@{source/include/BlackScholesFormula.hpp}}
+\mbox{\hyperlink{_black_scholes_formula_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ BLACKSCHOLESFORMULA\_HPP}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ BLACKSCHOLESFORMULA\_HPP}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_black_scholes}{BlackScholes}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ d1()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ d2()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{double}\ N(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ S;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Price\ of\ underlying}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ K;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Strike\ price}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ sigma;\ \ \ \ \ \ \ \textcolor{comment}{//\ Volatility}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ r;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Risk-\/free\ rate}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ T;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Maturity\ date}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Constructor}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_black_scholes}{BlackScholes}}(\textcolor{keywordtype}{double}\ S,\ \textcolor{keywordtype}{double}\ K,\ \textcolor{keywordtype}{double}\ sigma,\ \textcolor{keywordtype}{double}\ r,\ \textcolor{keywordtype}{double}\ T);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ CalculateCallOptionPrice()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ BLACKSCHOLESFORMULA\_HPP\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

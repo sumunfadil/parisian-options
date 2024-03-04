@@ -1,0 +1,25 @@
+\doxysection{Matrix.\+hpp}
+\hypertarget{_matrix_8hpp_source}{}\label{_matrix_8hpp_source}\index{source/include/Matrix.hpp@{source/include/Matrix.hpp}}
+\mbox{\hyperlink{_matrix_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ MATRIX\_HPP}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ MATRIX\_HPP}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ vector<double>\ Vector;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ vector<Vector>\ Matrix;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ Vector\ operator*\ (\textcolor{keyword}{const}\ Matrix\&\ C,\ \textcolor{keyword}{const}\ Vector\&\ V);}
+\DoxyCodeLine{00021\ Vector\ operator*\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ a,\ \textcolor{keyword}{const}\ Vector\&\ V);}
+\DoxyCodeLine{00022\ Vector\ operator+\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ a,\ \textcolor{keyword}{const}\ Vector\&\ V);}
+\DoxyCodeLine{00023\ Vector\ operator+\ (\textcolor{keyword}{const}\ Vector\&\ V,\ \textcolor{keyword}{const}\ Vector\&\ W);}
+\DoxyCodeLine{00024\ Vector\ operator*\ (\textcolor{keyword}{const}\ Vector\&\ V,\ \textcolor{keyword}{const}\ Vector\&\ W);}
+\DoxyCodeLine{00025\ Vector\ exp(\textcolor{keyword}{const}\ Vector\&\ V);}
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{double}\ operator\string^\ (\textcolor{keyword}{const}\ Vector\&\ V,\ \textcolor{keyword}{const}\ Vector\&\ W);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ MATRIX\_HPP\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

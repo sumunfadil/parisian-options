@@ -11,9 +11,12 @@
 #ifndef OPTION_HPP
 #define OPTION_HPP
 
-#include "BSModel01.hpp"
+#include "BlackScholesModel.hpp"
 
-// Abstract (base) class
+/**
+ * @brief Option payoff class (abstract class)
+ * 
+ */
 class Option
 {
     public:
@@ -24,13 +27,23 @@ class Option
         virtual double LowerCondition(BSModel* PtrModel, double t) = 0;
 };
 
-// Derived class
+/**
+ * @brief Put class is a derived class
+ * 
+ */
 class Put : public Option
 {
     public:
         double K;
 
-        // Constructor
+        /**
+         * @brief Construct a new Put object
+         * 
+         * @param K_ 
+         * @param T_ 
+         * @param zl_ 
+         * @param zu_ 
+         */
         Put(double K_, double T_, double zl_, double zu_);
 
         double Payoff(double z);

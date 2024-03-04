@@ -1,7 +1,7 @@
 /**
  * @file ExplicitMethod.hpp
  * @author Sumun, M. Fadil
- * @brief 
+ * @brief Explicit finite-difference method
  * @version 0.1
  * @date 2024-03-04
  * 
@@ -11,12 +11,23 @@
 #ifndef EXPLICITMETHOD_HPP
 #define EXPLICITMETHOD_HPP
 
-#include "FDMethod.hpp"
+#include "FiniteDifferenceMethod.hpp"
 
+/**
+ * @brief Explicit finite-difference method class
+ * 
+ */
 class ExplicitMethod : public FDMethod
 {
     public:
-        // Constructor
+
+        /**
+         * @brief Construct a new Explicit Method object
+         * 
+         * @param PtrPDE_ Pointer to a ParabPDE object
+         * @param imax_ Time dicretisation
+         * @param jmax_ Spatial discretisation
+         */
         ExplicitMethod(ParabPDE* PtrPDE_, int imax_, int jmax_)
             : FDMethod(PtrPDE_, imax_, jmax_) {}
     
@@ -26,6 +37,10 @@ class ExplicitMethod : public FDMethod
         double C(int i, int j);
         double D(int i, int j);
 
+        /**
+         * @brief Solve PDE
+         * 
+         */
         void SolvePDE();
 
 };

@@ -1,3 +1,13 @@
+/**
+ * @file ImplicitMethod.cpp
+ * @author Sumun, M. Fadil
+ * @brief 
+ * @version 0.1
+ * @date 2024-03-04
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include "ImplicitMethod.hpp"
 #include "Matrix.hpp"
 #include <cmath>

@@ -78,6 +78,11 @@ $(function() {
   <div class="headertitle"><div class="title">ImplicitScheme Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implicit finite-difference scheme.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_implicit_method_8hpp_source.html">ImplicitMethod.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ImplicitScheme:</div>
 <div class="dyncontent">
@@ -90,8 +95,8 @@ Inheritance diagram for ImplicitScheme:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a23376eadd0bd34f07297266f74235813" id="r_a23376eadd0bd34f07297266f74235813"><td class="memItemLeft" align="right" valign="top"><a id="a23376eadd0bd34f07297266f74235813" name="a23376eadd0bd34f07297266f74235813"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ImplicitScheme</b> (<a class="el" href="class_parab_p_d_e.html">ParabPDE</a> *PtrPDE_, int imax_, int jmax_)</td></tr>
+<tr class="memitem:a23376eadd0bd34f07297266f74235813" id="r_a23376eadd0bd34f07297266f74235813"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23376eadd0bd34f07297266f74235813">ImplicitScheme</a> (<a class="el" href="class_parab_p_d_e.html">ParabPDE</a> *PtrPDE_, int imax_, int jmax_)</td></tr>
+<tr class="memdesc:a23376eadd0bd34f07297266f74235813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Implicit Scheme object.  <br /></td></tr>
 <tr class="separator:a23376eadd0bd34f07297266f74235813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6298c2aa8e6a69e21a11f239051434e6" id="r_a6298c2aa8e6a69e21a11f239051434e6"><td class="memItemLeft" align="right" valign="top"><a id="a6298c2aa8e6a69e21a11f239051434e6" name="a6298c2aa8e6a69e21a11f239051434e6"></a>
 virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>A</b> (int i, int j)=0</td></tr>
@@ -120,15 +125,16 @@ Vector&#160;</td><td class="memItemRight" valign="bottom"><b>w</b> (int i)</td><
 <tr class="memitem:a31471e167e3e4eed3fdb5c4dd43778fc" id="r_a31471e167e3e4eed3fdb5c4dd43778fc"><td class="memItemLeft" align="right" valign="top"><a id="a31471e167e3e4eed3fdb5c4dd43778fc" name="a31471e167e3e4eed3fdb5c4dd43778fc"></a>
 Vector&#160;</td><td class="memItemRight" valign="bottom"><b>A</b> (int i, Vector q)</td></tr>
 <tr class="separator:a31471e167e3e4eed3fdb5c4dd43778fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae43fe98e4f18dde5ac6ab29ecd5910ce" id="r_ae43fe98e4f18dde5ac6ab29ecd5910ce"><td class="memItemLeft" align="right" valign="top"><a id="ae43fe98e4f18dde5ac6ab29ecd5910ce" name="ae43fe98e4f18dde5ac6ab29ecd5910ce"></a>
-Vector&#160;</td><td class="memItemRight" valign="bottom"><b>LUDecomposition</b> (int i, Vector q)</td></tr>
+<tr class="memitem:ae43fe98e4f18dde5ac6ab29ecd5910ce" id="r_ae43fe98e4f18dde5ac6ab29ecd5910ce"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae43fe98e4f18dde5ac6ab29ecd5910ce">LUDecomposition</a> (int i, Vector q)</td></tr>
+<tr class="memdesc:ae43fe98e4f18dde5ac6ab29ecd5910ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">LU Decomposition.  <br /></td></tr>
 <tr class="separator:ae43fe98e4f18dde5ac6ab29ecd5910ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75dd58c9d5cb2eb5afb62a7632d1962" id="r_ae75dd58c9d5cb2eb5afb62a7632d1962"><td class="memItemLeft" align="right" valign="top"><a id="ae75dd58c9d5cb2eb5afb62a7632d1962" name="ae75dd58c9d5cb2eb5afb62a7632d1962"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SolvePDE</b> ()</td></tr>
+<tr class="memdesc:ae75dd58c9d5cb2eb5afb62a7632d1962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve PDE. <br /></td></tr>
 <tr class="separator:ae75dd58c9d5cb2eb5afb62a7632d1962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_f_d_method"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_f_d_method')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_f_d_method.html">FDMethod</a></td></tr>
-<tr class="memitem:a87a98e06038c3bc9e88e639ded56d1cb inherit pub_methods_class_f_d_method" id="r_a87a98e06038c3bc9e88e639ded56d1cb"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>FDMethod</b> (<a class="el" href="class_parab_p_d_e.html">ParabPDE</a> *PtrPDE_, int imax_, int jmax_)</td></tr>
+<tr class="memitem:a87a98e06038c3bc9e88e639ded56d1cb inherit pub_methods_class_f_d_method" id="r_a87a98e06038c3bc9e88e639ded56d1cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_d_method.html#a87a98e06038c3bc9e88e639ded56d1cb">FDMethod</a> (<a class="el" href="class_parab_p_d_e.html">ParabPDE</a> *PtrPDE_, int imax_, int jmax_)</td></tr>
+<tr class="memdesc:a87a98e06038c3bc9e88e639ded56d1cb inherit pub_methods_class_f_d_method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_f_d_method.html">FDMethod</a> object.  <br /></td></tr>
 <tr class="separator:a87a98e06038c3bc9e88e639ded56d1cb inherit pub_methods_class_f_d_method"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aaf3e419045497b888808537fef2b19 inherit pub_methods_class_f_d_method" id="r_a9aaf3e419045497b888808537fef2b19"><td class="memItemLeft" align="right" valign="top">
 double&#160;</td><td class="memItemRight" valign="bottom"><b>t</b> (double i)</td></tr>
@@ -183,9 +189,88 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>dt</b></td></tr>
 vector&lt; Vector &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>V</b></td></tr>
 <tr class="separator:a627ca1e8a18af23dbbe44a43cbc2831e inherit pub_attribs_class_f_d_method"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implicit finite-difference scheme. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a23376eadd0bd34f07297266f74235813" name="a23376eadd0bd34f07297266f74235813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23376eadd0bd34f07297266f74235813">&#9670;&#160;</a></span>ImplicitScheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImplicitScheme::ImplicitScheme </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_parab_p_d_e.html">ParabPDE</a> *</td>          <td class="paramname"><span class="paramname"><em>PtrPDE_</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>imax_</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>jmax_</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new Implicit Scheme object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">PtrPDE_</td><td>Pointer to Parabolic PDE </td></tr>
+    <tr><td class="paramname">imax_</td><td></td></tr>
+    <tr><td class="paramname">jmax_</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae43fe98e4f18dde5ac6ab29ecd5910ce" name="ae43fe98e4f18dde5ac6ab29ecd5910ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43fe98e4f18dde5ac6ab29ecd5910ce">&#9670;&#160;</a></span>LUDecomposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector ImplicitScheme::LUDecomposition </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector</td>          <td class="paramname"><span class="paramname"><em>q</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>LU Decomposition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td></td></tr>
+    <tr><td class="paramname">q</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>source/include/<a class="el" href="_implicit_method_8hpp_source.html">ImplicitMethod.hpp</a></li>
-<li>source/src/<b>ImplicitMethod.cpp</b></li>
+<li>source/src/<a class="el" href="_implicit_method_8cpp.html">ImplicitMethod.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

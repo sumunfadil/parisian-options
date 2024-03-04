@@ -14,11 +14,21 @@
 #include "FiniteDifferenceMethod.hpp"
 #include "Matrix.hpp"
 
+/**
+ * @brief Implicit finite-difference scheme
+ * 
+ */
 class ImplicitScheme : public FDMethod
 {
     public:
 
-        // Constructor
+        /**
+         * @brief Construct a new Implicit Scheme object
+         * 
+         * @param PtrPDE_ Pointer to Parabolic PDE
+         * @param imax_ 
+         * @param jmax_ 
+         */
         ImplicitScheme(ParabPDE* PtrPDE_, int imax_, int jmax_)
             : FDMethod(PtrPDE_, imax_, jmax_) {}
 
@@ -33,8 +43,19 @@ class ImplicitScheme : public FDMethod
         Vector w(int i);
         Vector A(int i, Vector q);
 
+        /**
+         * @brief LU Decomposition 
+         * 
+         * @param i 
+         * @param q 
+         * @return Vector 
+         */
         Vector LUDecomposition(int i, Vector q);
 
+        /**
+         * @brief Solve PDE
+         * 
+         */
         void SolvePDE();
 };
 

@@ -11,6 +11,10 @@
 #ifndef PARABOLICPDE_HPP
 #define PARABOLICPDE_HPP
 
+/**
+ * @brief Parabolic PDE class
+ * 
+ */
 class ParabPDE
 {
     public: 

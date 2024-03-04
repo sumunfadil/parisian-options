@@ -1,4 +1,14 @@
-#include "BSModel01.hpp"
+/**
+ * @file BlackScholesModel.cpp
+ * @author Sumun, M. Fadil
+ * @brief 
+ * @version 0.1
+ * @date 2024-03-04
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+#include "BlackScholesModel.hpp"
 #include <cmath>
 
 // Constructor

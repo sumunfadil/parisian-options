@@ -79,14 +79,19 @@ $(function() {
   <div class="headertitle"><div class="title">BlackScholes Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_black_scholes.html" title="BlackScholes class.">BlackScholes</a> class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_black_scholes_formula_8hpp_source.html">BlackScholesFormula.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad10ad4974cb0255a37d0f50634e0cced" id="r_ad10ad4974cb0255a37d0f50634e0cced"><td class="memItemLeft" align="right" valign="top"><a id="ad10ad4974cb0255a37d0f50634e0cced" name="ad10ad4974cb0255a37d0f50634e0cced"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BlackScholes</b> (double S, double K, double sigma, double r, double T)</td></tr>
+<tr class="memitem:ad10ad4974cb0255a37d0f50634e0cced" id="r_ad10ad4974cb0255a37d0f50634e0cced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad10ad4974cb0255a37d0f50634e0cced">BlackScholes</a> (double S, double K, double sigma, double r, double T)</td></tr>
+<tr class="memdesc:ad10ad4974cb0255a37d0f50634e0cced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Black Scholes object.  <br /></td></tr>
 <tr class="separator:ad10ad4974cb0255a37d0f50634e0cced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2848aca073dc2497b284ae345fc96461" id="r_a2848aca073dc2497b284ae345fc96461"><td class="memItemLeft" align="right" valign="top"><a id="a2848aca073dc2497b284ae345fc96461" name="a2848aca073dc2497b284ae345fc96461"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateCallOptionPrice</b> () const</td></tr>
+<tr class="memitem:a2848aca073dc2497b284ae345fc96461" id="r_a2848aca073dc2497b284ae345fc96461"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2848aca073dc2497b284ae345fc96461">CalculateCallOptionPrice</a> () const</td></tr>
+<tr class="memdesc:a2848aca073dc2497b284ae345fc96461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Price of a European call option using the Black-Scholes formula.  <br /></td></tr>
 <tr class="separator:a2848aca073dc2497b284ae345fc96461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -107,9 +112,81 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>r</b></td></tr>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>T</b></td></tr>
 <tr class="separator:a23d25eaed1c1df7ca327fd1108f9b645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_black_scholes.html" title="BlackScholes class.">BlackScholes</a> class. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad10ad4974cb0255a37d0f50634e0cced" name="ad10ad4974cb0255a37d0f50634e0cced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10ad4974cb0255a37d0f50634e0cced">&#9670;&#160;</a></span>BlackScholes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BlackScholes::BlackScholes </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>S</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>K</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>sigma</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>r</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>T</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new Black Scholes object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">S</td><td>Stock price </td></tr>
+    <tr><td class="paramname">K</td><td>Strike price </td></tr>
+    <tr><td class="paramname">sigma</td><td>Volatility </td></tr>
+    <tr><td class="paramname">r</td><td>Risk-free interest rate </td></tr>
+    <tr><td class="paramname">T</td><td>Maturity date </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2848aca073dc2497b284ae345fc96461" name="a2848aca073dc2497b284ae345fc96461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2848aca073dc2497b284ae345fc96461">&#9670;&#160;</a></span>CalculateCallOptionPrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double BlackScholes::CalculateCallOptionPrice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Price of a European call option using the Black-Scholes formula. </p>
+<dl class="section return"><dt>Returns</dt><dd>double Price of a European call price </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>source/include/<a class="el" href="_black_scholes_formula_8hpp_source.html">BlackScholesFormula.hpp</a></li>
-<li>source/src/<b>BlackScholesFormula.cpp</b></li>
+<li>source/src/<a class="el" href="_black_scholes_formula_8cpp.html">BlackScholesFormula.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

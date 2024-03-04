@@ -1,5 +1,5 @@
 /**
- * @file FDMethod.hpp
+ * @file FiniteDifferenceMethod.hpp
  * @author Sumun, M. Fadil
  * @brief Finite-difference method for Parabolic PDEs
  * @version 0.1
@@ -26,7 +26,13 @@ class FDMethod
 
         vector<Vector> V;
 
-        // Constructor
+        /**
+         * @brief Construct a new FDMethod object
+         * 
+         * @param PtrPDE_ Pointer to a parabolic PDE
+         * @param imax_ Time discretisation
+         * @param jmax_ Spatial discretisation
+         */
         FDMethod(ParabPDE* PtrPDE_, int imax_, int jmax_);
 
         double t(double i);

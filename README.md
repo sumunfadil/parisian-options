@@ -1,4 +1,4 @@
-## Main page
+## Overview
 
 The `parisian-options` library contains the implementation of various methods used to price Parisian options including:
 - Laplace transforms
@@ -7,4 +7,5 @@ The `parisian-options` library contains the implementation of various methods us
 - Monte Carlo Methods
 - Recursive methods
 
+### Setup
 Some brief setup instructions can be found [here](SETUP.md).

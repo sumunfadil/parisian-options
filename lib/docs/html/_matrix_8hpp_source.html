@@ -94,15 +94,25 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">typedef</span> vector&lt;double&gt; Vector;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">typedef</span> vector&lt;Vector&gt; Matrix;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>Vector operator* (<span class="keyword">const</span> Matrix&amp; C, <span class="keyword">const</span> Vector&amp; V);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>Vector operator* (<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a, <span class="keyword">const</span> Vector&amp; V);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>Vector operator+ (<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a, <span class="keyword">const</span> Vector&amp; V);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>Vector operator+ (<span class="keyword">const</span> Vector&amp; V, <span class="keyword">const</span> Vector&amp; W);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>Vector operator* (<span class="keyword">const</span> Vector&amp; V, <span class="keyword">const</span> Vector&amp; W);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>Vector exp(<span class="keyword">const</span> Vector&amp; V);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">double</span> operator^ (<span class="keyword">const</span> Vector&amp; V, <span class="keyword">const</span> Vector&amp; W);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif </span><span class="comment">/* MATRIX_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>Vector <a class="code hl_function" href="_matrix_8hpp.html#a62b3f976d9d153aac63e7697f8afc932">operator* </a>(<span class="keyword">const</span> Matrix&amp; C, <span class="keyword">const</span> Vector&amp; V);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>Vector <a class="code hl_function" href="_matrix_8hpp.html#a62b3f976d9d153aac63e7697f8afc932">operator* </a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a, <span class="keyword">const</span> Vector&amp; V);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>Vector <a class="code hl_function" href="_matrix_8hpp.html#af4782a66988225b6dc11f284358f61a4">operator+ </a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a, <span class="keyword">const</span> Vector&amp; V);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>Vector <a class="code hl_function" href="_matrix_8hpp.html#af4782a66988225b6dc11f284358f61a4">operator+ </a>(<span class="keyword">const</span> Vector&amp; V, <span class="keyword">const</span> Vector&amp; W);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>Vector <a class="code hl_function" href="_matrix_8hpp.html#a62b3f976d9d153aac63e7697f8afc932">operator* </a>(<span class="keyword">const</span> Vector&amp; V, <span class="keyword">const</span> Vector&amp; W);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>Vector <a class="code hl_function" href="_matrix_8hpp.html#aca540c4481ba4a85417f7638f126f958">exp</a>(<span class="keyword">const</span> Vector&amp; V);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">double</span> <a class="code hl_function" href="_matrix_8hpp.html#accb68297c685cc6528b2739c7fbf9fa3">operator^ </a>(<span class="keyword">const</span> Vector&amp; V, <span class="keyword">const</span> Vector&amp; W);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">/* MATRIX_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_matrix_8hpp_html_a62b3f976d9d153aac63e7697f8afc932"><div class="ttname"><a href="_matrix_8hpp.html#a62b3f976d9d153aac63e7697f8afc932">operator*</a></div><div class="ttdeci">Vector operator*(const Matrix &amp;C, const Vector &amp;V)</div><div class="ttdoc">Matrix multiplication with a vector.</div><div class="ttdef"><b>Definition</b> Matrix.cpp:14</div></div>
+<div class="ttc" id="a_matrix_8hpp_html_aca540c4481ba4a85417f7638f126f958"><div class="ttname"><a href="_matrix_8hpp.html#aca540c4481ba4a85417f7638f126f958">exp</a></div><div class="ttdeci">Vector exp(const Vector &amp;V)</div><div class="ttdoc">Exponentiating each element of a vector.</div><div class="ttdef"><b>Definition</b> Matrix.cpp:94</div></div>
+<div class="ttc" id="a_matrix_8hpp_html_accb68297c685cc6528b2739c7fbf9fa3"><div class="ttname"><a href="_matrix_8hpp.html#accb68297c685cc6528b2739c7fbf9fa3">operator^</a></div><div class="ttdeci">double operator^(const Vector &amp;V, const Vector &amp;W)</div><div class="ttdoc">Dot product of two vectors.</div><div class="ttdef"><b>Definition</b> Matrix.cpp:110</div></div>
+<div class="ttc" id="a_matrix_8hpp_html_af4782a66988225b6dc11f284358f61a4"><div class="ttname"><a href="_matrix_8hpp.html#af4782a66988225b6dc11f284358f61a4">operator+</a></div><div class="ttdeci">Vector operator+(const double &amp;a, const Vector &amp;V)</div><div class="ttdoc">Add a constant to each element of a vector.</div><div class="ttdef"><b>Definition</b> Matrix.cpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

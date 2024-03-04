@@ -1,4 +1,14 @@
-#include "BlackScholes.hpp"
+/**
+ * @file BlackScholesFormula.cpp
+ * @author Sumun, M. Fadil
+ * @brief Implementation of Black-Scholes formula
+ * @version 0.1
+ * @date 2024-03-04
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+#include "BlackScholesFormula.hpp"
 #include <cmath>
 
 BlackScholes::BlackScholes(double S, double K, double sigma, double r, double T) :

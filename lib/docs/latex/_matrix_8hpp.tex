@@ -1,0 +1,58 @@
+\doxysection{source/include/\+Matrix.hpp File Reference}
+\hypertarget{_matrix_8hpp}{}\label{_matrix_8hpp}\index{source/include/Matrix.hpp@{source/include/Matrix.hpp}}
+
+
+Matrix operations.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_matrix_8hpp_a9a0795b74fd145527f628932c8884ffe}\label{_matrix_8hpp_a9a0795b74fd145527f628932c8884ffe} 
+typedef vector$<$ double $>$ {\bfseries Vector}
+\item 
+\Hypertarget{_matrix_8hpp_ab8cd074dd52dc9d34e39aa369ef95ba1}\label{_matrix_8hpp_ab8cd074dd52dc9d34e39aa369ef95ba1} 
+typedef vector$<$ Vector $>$ {\bfseries Matrix}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_matrix_8hpp_a62b3f976d9d153aac63e7697f8afc932}\label{_matrix_8hpp_a62b3f976d9d153aac63e7697f8afc932} 
+Vector {\bfseries operator\texorpdfstring{$\ast$}{*}} (const Matrix \&C, const Vector \&V)
+\item 
+\Hypertarget{_matrix_8hpp_aa960bb1a05926872613a1430272804f9}\label{_matrix_8hpp_aa960bb1a05926872613a1430272804f9} 
+Vector {\bfseries operator\texorpdfstring{$\ast$}{*}} (const double \&a, const Vector \&V)
+\item 
+\Hypertarget{_matrix_8hpp_af4782a66988225b6dc11f284358f61a4}\label{_matrix_8hpp_af4782a66988225b6dc11f284358f61a4} 
+Vector {\bfseries operator+} (const double \&a, const Vector \&V)
+\item 
+\Hypertarget{_matrix_8hpp_ae614c7dbe7edd28cdd2b1145f9645c2d}\label{_matrix_8hpp_ae614c7dbe7edd28cdd2b1145f9645c2d} 
+Vector {\bfseries operator+} (const Vector \&V, const Vector \&W)
+\item 
+\Hypertarget{_matrix_8hpp_ac05ef2a68caf1f77ed88e657ace8f03b}\label{_matrix_8hpp_ac05ef2a68caf1f77ed88e657ace8f03b} 
+Vector {\bfseries operator\texorpdfstring{$\ast$}{*}} (const Vector \&V, const Vector \&W)
+\item 
+\Hypertarget{_matrix_8hpp_aca540c4481ba4a85417f7638f126f958}\label{_matrix_8hpp_aca540c4481ba4a85417f7638f126f958} 
+Vector {\bfseries exp} (const Vector \&V)
+\item 
+\Hypertarget{_matrix_8hpp_accb68297c685cc6528b2739c7fbf9fa3}\label{_matrix_8hpp_accb68297c685cc6528b2739c7fbf9fa3} 
+double {\bfseries operator\texorpdfstring{$^\wedge$}{\string^}} (const Vector \&V, const Vector \&W)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Matrix operations. 
+
+\begin{DoxyAuthor}{Author}
+Sumun, M. Fadil 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/03-\/04
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}

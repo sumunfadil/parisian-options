@@ -1,0 +1,38 @@
+\doxysection{Option.\+hpp}
+\hypertarget{_option_8hpp_source}{}\label{_option_8hpp_source}\index{source/include/Option.hpp@{source/include/Option.hpp}}
+\mbox{\hyperlink{_option_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ OPTION\_HPP}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ OPTION\_HPP}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}BSModel01.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ Abstract\ (base)\ class}}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_option}{Option}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ T,\ zl,\ zu;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ Payoff(\textcolor{keywordtype}{double}\ z)\ =\ 0;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ UpperCondition(\mbox{\hyperlink{class_b_s_model}{BSModel}}*\ PtrModel,\ \textcolor{keywordtype}{double}\ t)\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ LowerCondition(\mbox{\hyperlink{class_b_s_model}{BSModel}}*\ PtrModel,\ \textcolor{keywordtype}{double}\ t)\ =\ 0;}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ Derived\ class}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_put}{Put}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_option}{Option}}}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ K;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Constructor}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_put}{Put}}(\textcolor{keywordtype}{double}\ K\_,\ \textcolor{keywordtype}{double}\ T\_,\ \textcolor{keywordtype}{double}\ zl\_,\ \textcolor{keywordtype}{double}\ zu\_);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ Payoff(\textcolor{keywordtype}{double}\ z);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ UpperCondition(\mbox{\hyperlink{class_b_s_model}{BSModel}}*\ PtrModel,\ \textcolor{keywordtype}{double}\ t);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ LowerCondition(\mbox{\hyperlink{class_b_s_model}{BSModel}}*\ PtrModel,\ \textcolor{keywordtype}{double}\ t);}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ OPTION\_HPP\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

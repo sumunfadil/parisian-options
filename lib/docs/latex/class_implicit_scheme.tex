@@ -1,0 +1,94 @@
+\doxysection{Implicit\+Scheme Class Reference}
+\hypertarget{class_implicit_scheme}{}\label{class_implicit_scheme}\index{ImplicitScheme@{ImplicitScheme}}
+Inheritance diagram for Implicit\+Scheme\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_implicit_scheme}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_implicit_scheme_a23376eadd0bd34f07297266f74235813}\label{class_implicit_scheme_a23376eadd0bd34f07297266f74235813} 
+{\bfseries Implicit\+Scheme} (\mbox{\hyperlink{class_parab_p_d_e}{Parab\+PDE}} \texorpdfstring{$\ast$}{*}Ptr\+PDE\+\_\+, int imax\+\_\+, int jmax\+\_\+)
+\item 
+\Hypertarget{class_implicit_scheme_a6298c2aa8e6a69e21a11f239051434e6}\label{class_implicit_scheme_a6298c2aa8e6a69e21a11f239051434e6} 
+virtual double {\bfseries A} (int i, int j)=0
+\item 
+\Hypertarget{class_implicit_scheme_ad57a059df9407f9b345286629f404fd8}\label{class_implicit_scheme_ad57a059df9407f9b345286629f404fd8} 
+virtual double {\bfseries B} (int i, int j)=0
+\item 
+\Hypertarget{class_implicit_scheme_a786ac8bd91b024ac6a4f5be52f6adf3b}\label{class_implicit_scheme_a786ac8bd91b024ac6a4f5be52f6adf3b} 
+virtual double {\bfseries C} (int i, int j)=0
+\item 
+\Hypertarget{class_implicit_scheme_a5f935347574bd6c3e60217b84be4aceb}\label{class_implicit_scheme_a5f935347574bd6c3e60217b84be4aceb} 
+virtual double {\bfseries D} (int i, int j)=0
+\item 
+\Hypertarget{class_implicit_scheme_ae69db8ab3cc619fc07d79d7854a3c8c6}\label{class_implicit_scheme_ae69db8ab3cc619fc07d79d7854a3c8c6} 
+virtual double {\bfseries E} (int i, int j)=0
+\item 
+\Hypertarget{class_implicit_scheme_a634a9b2baac10cc42f77ca396caa530a}\label{class_implicit_scheme_a634a9b2baac10cc42f77ca396caa530a} 
+virtual double {\bfseries F} (int i, int j)=0
+\item 
+\Hypertarget{class_implicit_scheme_addb3ffe7eb1516ce5a0918423b9ce428}\label{class_implicit_scheme_addb3ffe7eb1516ce5a0918423b9ce428} 
+virtual double {\bfseries G} (int i, int j)=0
+\item 
+\Hypertarget{class_implicit_scheme_acbafe567695560c6cfb72d2edf1663b4}\label{class_implicit_scheme_acbafe567695560c6cfb72d2edf1663b4} 
+Vector {\bfseries w} (int i)
+\item 
+\Hypertarget{class_implicit_scheme_a31471e167e3e4eed3fdb5c4dd43778fc}\label{class_implicit_scheme_a31471e167e3e4eed3fdb5c4dd43778fc} 
+Vector {\bfseries A} (int i, Vector q)
+\item 
+\Hypertarget{class_implicit_scheme_ae43fe98e4f18dde5ac6ab29ecd5910ce}\label{class_implicit_scheme_ae43fe98e4f18dde5ac6ab29ecd5910ce} 
+Vector {\bfseries LUDecomposition} (int i, Vector q)
+\item 
+\Hypertarget{class_implicit_scheme_ae75dd58c9d5cb2eb5afb62a7632d1962}\label{class_implicit_scheme_ae75dd58c9d5cb2eb5afb62a7632d1962} 
+void {\bfseries Solve\+PDE} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_f_d_method}{FDMethod}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries FDMethod} (\mbox{\hyperlink{class_parab_p_d_e}{Parab\+PDE}} \texorpdfstring{$\ast$}{*}Ptr\+PDE\+\_\+, int imax\+\_\+, int jmax\+\_\+)
+\item 
+double {\bfseries t} (double i)
+\item 
+double {\bfseries x} (int j)
+\item 
+double {\bfseries a} (double i, int j)
+\item 
+double {\bfseries b} (double i, int j)
+\item 
+double {\bfseries c} (double i, int j)
+\item 
+double {\bfseries d} (double i, int j)
+\item 
+double {\bfseries f} (int j)
+\item 
+double {\bfseries fu} (int i)
+\item 
+double {\bfseries fl} (int i)
+\item 
+double {\bfseries v} (double t, double x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_f_d_method}{FDMethod}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_parab_p_d_e}{Parab\+PDE}} \texorpdfstring{$\ast$}{*} {\bfseries Ptr\+PDE}
+\item 
+int {\bfseries imax}
+\item 
+int {\bfseries jmax}
+\item 
+double {\bfseries dx}
+\item 
+double {\bfseries dt}
+\item 
+vector$<$ Vector $>$ {\bfseries V}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/include/\mbox{\hyperlink{_implicit_method_8hpp}{Implicit\+Method.\+hpp}}\item 
+source/src/Implicit\+Method.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Put" name="Put">
+<area shape="rect" id="Node000001" title="European put class is a derived class." alt="" coords="5,208,125,341"/>
+<area shape="rect" id="Node000002" href="$class_option.html" title="Option payoff class (abstract class)" alt="" coords="5,5,125,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,175,68,208,63,208,63,175"/>
+</map>

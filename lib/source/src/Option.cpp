@@ -31,3 +31,19 @@ double Put::LowerCondition(BSModel* PtrModel, double t)
     return K*exp(-PtrModel->r*(T-t));
 }
 
+// To check implementation for Call class
+Call::Call(double K_, double T_, double zl_, double zu_)
+{
+    K = K_; T = T_; zl = zl_; zu = zu_; 
+}
+
+double Call::UpperCondition(BSModel* PtrModel, double t)
+{
+    return zu-K*exp(-PtrModel->r*(T-t));
+}
+
+double Call::LowerCondition(BSModel* PtrModel, double t)
+{
+    return zl;
+}
+

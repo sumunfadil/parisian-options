@@ -1,0 +1,9 @@
+<map id="BSEq" name="BSEq">
+<area shape="rect" id="Node000001" title=" " alt="" coords="148,309,213,528"/>
+<area shape="rect" id="Node000002" href="$class_parab_p_d_e.html" title="Parabolic PDE class." alt="" coords="5,5,79,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,232,92,244,151,358,146,360,88,246,82,235"/>
+<area shape="rect" id="Node000003" href="$class_b_s_model.html" title="Black&#45;Scholes model class." alt="" coords="103,59,259,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,192,183,292,178,292,178,192"/>
+<area shape="rect" id="Node000004" href="$class_option.html" title="Option payoff class (abstract class)" alt="" coords="283,48,403,203"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="303,204,224,346,219,343,298,201"/>
+</map>

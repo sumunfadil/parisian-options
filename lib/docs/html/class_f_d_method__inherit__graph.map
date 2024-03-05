@@ -1,0 +1,7 @@
+<map id="FDMethod" name="FDMethod">
+<area shape="rect" id="Node000001" title=" " alt="" coords="93,5,185,395"/>
+<area shape="rect" id="Node000002" href="$class_explicit_method.html" title="Explicit finite&#45;difference method class." alt="" coords="5,507,123,683"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,410,83,507,78,506,96,409"/>
+<area shape="rect" id="Node000003" href="$class_implicit_scheme.html" title="Implicit finite&#45;difference scheme." alt="" coords="147,443,280,747"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,409,187,442,182,443,176,410"/>
+</map>

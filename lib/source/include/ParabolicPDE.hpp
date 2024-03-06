@@ -12,12 +12,15 @@
 #define PARABOLICPDE_HPP
 
 /**
- * @brief Parabolic PDE class
+ * @brief Parabolic PDE class. This header file has no implementation since it 
+ * is an abstract class. It contains coefficients and boundary conditions of 
+ * a parabolic PDE
  * 
  */
 class ParabPDE
 {
     public: 
+        // Domain: [0,T]x[xl,xu]
         double T, xl, xu;
 
         // Coeffficient functions

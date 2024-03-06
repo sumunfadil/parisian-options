@@ -15,6 +15,11 @@
 #include "BlackScholesModel.hpp"
 #include "Option.hpp"
 
+/**
+ * @brief The Black-Scholes PDE (or equation) class. BSEq inherits (virtual) from 
+ * ParabPDE 
+ * 
+ */
 class BSEq : public ParabPDE
 {
     public: 
@@ -24,18 +29,18 @@ class BSEq : public ParabPDE
         /**
          * @brief Construct a new BSEq object
          * 
-         * @param PtrModel_ Pointer to a BSModel object
-         * @param PtrOption_ Pointer to an Option object
+         * @param PtrModel_ Pointer to a BSModel object (used to pass model parameters)
+         * @param PtrOption_ Pointer to an Option object (boundary condition functions)
          */
         BSEq(BSModel* PtrModel_, Option* PtrOption_);
 
-        // Coeffficient functions
+        // BSPDE coeffficient functions
         double a(double t, double z);
         double b(double t, double z);
         double c(double t, double z);
         double d(double t, double z);
 
-        // Boundary conditions
+        // BSPDE boundary conditions
         double f(double z);
         double fl(double t);
         double fu(double t);

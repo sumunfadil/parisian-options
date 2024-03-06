@@ -14,7 +14,9 @@
 #include "BlackScholesModel.hpp"
 
 /**
- * @brief Option payoff class (abstract class)
+ * @brief Option payoff class (abstract class). This Option class and subsequent 
+ * derived classes are mainly used for defining boundary conditions (one terminal
+ * condition and two boundary conditions)
  * 
  */
 class Option
@@ -24,7 +26,7 @@ class Option
 
         virtual double Payoff(double z) = 0;
         // Boundary conditions often make use of model parameters
-        // IDEA: Pass pointer to AssetModel class
+        // TODO: Pass pointer to AssetModel class
         virtual double UpperCondition(BSModel* PtrModel, double t) = 0;
         virtual double LowerCondition(BSModel* PtrModel, double t) = 0;
 };
@@ -41,10 +43,10 @@ class Put : public Option
         /**
          * @brief Construct a new Put object
          * 
-         * @param K_ 
-         * @param T_ 
-         * @param zl_ 
-         * @param zu_ 
+         * @param K_ Strike price
+         * @param T_ Maturity date
+         * @param zl_ Lower boundary value
+         * @param zu_ Upper boundary value
          */
         Put(double K_, double T_, double zl_, double zu_);
 
@@ -76,5 +78,7 @@ class Call : public Option
         double UpperCondition(BSModel* PtrModel, double t);
         double LowerCondition(BSModel* PtrModel, double t);
 };
+
+// TODO: Define path-dependent options classes
 
 #endif /* OPTION_HPP */

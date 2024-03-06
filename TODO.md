@@ -18,6 +18,9 @@
 
 ## Things to learn
 - Learn about **stencils** for finite-difference methods e.g. [here](https://en.wikipedia.org/wiki/Stencil_(numerical_analysis)) an how they are used. Try to make a class `stencil` and implement
+- About stencils: try to derive a 5-point, 7-point and 9-point stencil for some parabollic PDE and assess their performance and stability
+- Abract the stencil into a class
+- Experiment with different grids e.g. dyadic
 - Comparison between finite-difference schemes e.g. explicit, implicit and Crank-Nicolson and [stalility issues](https://en.wikipedia.org/wiki/Finite_difference_method#:~:text=The%20two%20sources%20of%20error,the%20exact%20quantity%20assuming%20perfect) (look at stability analysis and conditions to have a stable scheme)
 - Graphs for error analysis e.g. time discretisation with respect to spacial discretisation
 - Oscillations for Gamma of options and the need for [damping](https://en.wikipedia.org/wiki/Crank%E2%80%93Nicolson_method) in finite-difference schemes

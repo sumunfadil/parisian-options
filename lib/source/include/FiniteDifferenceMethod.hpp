@@ -20,10 +20,14 @@ typedef vector<double> Vector;
 class FDMethod
 {
     public:
+        // Pointer to a parabolic PDE object
         ParabPDE* PtrPDE;
+        // The number of time and spatial intervals
         int imax, jmax;
+        // Step sizes
         double dx, dt;
 
+        // A matrix of the value V(t_i,x_j) for each i,j
         vector<Vector> V;
 
         /**
@@ -49,6 +53,13 @@ class FDMethod
         double fu(int i);
         double fl(int i);
 
+        /**
+         * @brief Calculates v(t,x) using interpolation
+         * 
+         * @param t Any time in [0,T]
+         * @param x Any value in [x1,xu]
+         * @return double 
+         */
         double v(double t, double x);
 };
 

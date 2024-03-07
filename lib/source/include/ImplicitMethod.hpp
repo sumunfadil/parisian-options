@@ -53,6 +53,14 @@ class ImplicitScheme : public FDMethod
         Vector LUDecomposition(int i, Vector q);
 
         /**
+         * @brief Thomas algotithm O(n) 
+         * 
+         * @param q 
+         * @return Vector 
+         */
+        Vector ThomasAlgorithm(Vector q);
+
+        /**
          * @brief Solve PDE
          * 
          */

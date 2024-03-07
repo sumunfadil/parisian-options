@@ -30,12 +30,16 @@
 ### Research ideas
 - Adapt PDE method to cater for deterministic barrier $b(t)$ and look at its behaviour
 - There is a paper about potential issues related to sensitivities of Parisian options (which uses PDEs) and it would be nice to implement this and see for yourself what the issues are. One point to note is that Parisian options behave like barrier when the time is close to $D$ but rare event?
+- Since PDE methods are only feasible for low dimensions, can we use other efficient solvers for PDEs e.g. neural networks?
+- Can we formulate a Linear Complementarity Problem (LCP) for Parisian options?
 
 ### Files TODO list
 - `Option.hpp` 
     - to implement Boundary condition by passing pointer to AssetModel as argument to boundary conditions (Implement AssetModel and IAssetModel)
     - Make variables `private` and implement getters and setters (access functions)
     - Define path-dependent options classes e.g. barrier, Asian, Parisian and American, among others
+- `ImplicitMethod.hpp`
+    - Implement Thomas algorithm
 
 # References
 1. 2006 - Duffy - Finite Difference Methods

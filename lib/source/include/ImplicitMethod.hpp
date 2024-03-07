@@ -14,13 +14,25 @@
 #include "FiniteDifferenceMethod.hpp"
 #include "Matrix.hpp"
 
+enum SolutionMethod {
+    LU_DECOMPOSITION,
+    THOMAS_ALGORITHM
+};
+
 /**
  * @brief Implicit finite-difference scheme
  * 
  */
 class ImplicitScheme : public FDMethod
 {
+    private:
+        SolutionMethod solutionMethod;
+
     public:
+        void SetSolutionMethod(SolutionMethod method) 
+        {
+            solutionMethod = method;
+        }
 
         /**
          * @brief Construct a new Implicit Scheme object
@@ -43,6 +55,7 @@ class ImplicitScheme : public FDMethod
         Vector w(int i);
         Vector A(int i, Vector q);
 
+
         /**
          * @brief LU Decomposition 
          * 
@@ -58,7 +71,7 @@ class ImplicitScheme : public FDMethod
          * @param q 
          * @return Vector 
          */
-        Vector ThomasAlgorithm(Vector q);
+        Vector ThomasAlgorithm(int i, Vector q);
 
         /**
          * @brief Solve PDE

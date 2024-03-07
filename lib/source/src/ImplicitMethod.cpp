@@ -67,6 +67,37 @@ Vector ImplicitScheme::LUDecomposition(int i, Vector q)
     return p;
 }
 
+// To check implementation again
+Vector ImplicitScheme::ThomasAlgorithm(int i, Vector q) 
+{
+    Vector p(jmax+1);
+    
+    // Forward elimination
+    Vector alpha(jmax);
+    Vector beta(jmax);
+    
+    alpha[1] = B(i, 1);
+    beta[1] = F(i, 1);
+    
+    for (int j = 2; j < jmax; j++)
+    {
+        double denom = A(i, j-1) * alpha[j-1] + B(i, j);
+        alpha[j] = -C(i, j-1) / denom;
+        beta[j] = (F(i, j) - A(i, j-1) * beta[j-1]) / denom;
+    }
+
+    // Backward substitution
+    p[jmax-1] = (F(i, jmax-1) - A(i, jmax-2) * beta[jmax-2]) / (B(i, jmax-1) + A(i, jmax-2) * alpha[jmax-2]);
+
+    for (int j = jmax-2; j > 0; j--)
+    {
+        p[j] = alpha[j] * p[j+1] + beta[j];
+    }
+
+    return p;
+}
+
+/* SolvePDE() using LU decomposition
 void ImplicitScheme::SolvePDE() 
 {
     for (int j=0; j<=jmax; j++) 
@@ -81,3 +112,28 @@ void ImplicitScheme::SolvePDE()
         V[i-1][jmax] = fu(i-1);
     }
 }
+*/
+
+
+void ImplicitScheme::SolvePDE() {
+        for (int j = 0; j <= jmax; j++) 
+        {
+            V[imax][j] = f(j);
+        }
+
+        for (int i = imax; i > 0; i--) 
+        {
+            if (solutionMethod == LU_DECOMPOSITION) 
+            {
+                V[i - 1] = LUDecomposition(i, A(i, V[i]) + w(i));
+            } 
+            
+            else if (solutionMethod == THOMAS_ALGORITHM) 
+            {
+                V[i - 1] = ThomasAlgorithm(i, A(i, V[i]) + w(i));
+            }
+
+            V[i - 1][0] = fl(i - 1);
+            V[i - 1][jmax] = fu(i - 1);
+        }
+    }

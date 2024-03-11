@@ -8,12 +8,13 @@
  * @copyright Copyright (c) 2024
  * 
  */
-#ifndef BLACKSCHOLESEQUATION_HPP    
+#ifndef BLACKSCHOLESEQUATION_HPP
 #define BLACKSCHOLESEQUATION_HPP
 
 #include "ParabolicPDE.hpp"
 #include "BlackScholesModel.hpp"
 #include "Option.hpp"
+#include <memory>
 
 /**
  * @brief The Black-Scholes PDE (or equation) class. BSEq inherits (virtual) from 
@@ -23,8 +24,10 @@
 class BSEq : public ParabPDE
 {
     public: 
-        BSModel* PtrModel;
-        Option* PtrOption;
+
+        // Using smart pointers
+        std::unique_ptr<BSModel> PtrModel;
+        std::unique_ptr<Option> PtrOption;
 
         /**
          * @brief Construct a new BSEq object
@@ -32,7 +35,7 @@ class BSEq : public ParabPDE
          * @param PtrModel_ Pointer to a BSModel object (used to pass model parameters)
          * @param PtrOption_ Pointer to an Option object (boundary condition functions)
          */
-        BSEq(BSModel* PtrModel_, Option* PtrOption_);
+        BSEq(std::unique_ptr<BSModel> PtrModel_, std::unique_ptr<Option> PtrOption_);
 
         // BSPDE coeffficient functions
         double a(double t, double z);

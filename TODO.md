@@ -32,6 +32,7 @@
 - There is a paper about potential issues related to sensitivities of Parisian options (which uses PDEs) and it would be nice to implement this and see for yourself what the issues are. One point to note is that Parisian options behave like barrier when the time is close to $D$ but rare event?
 - Since PDE methods are only feasible for low dimensions, can we use other efficient solvers for PDEs e.g. neural networks?
 - Can we formulate a Linear Complementarity Problem (LCP) for Parisian options?
+- Look at lightning solvers in N.T. webpage
 
 ### Files TODO list
 - `Option.hpp` 
@@ -51,4 +52,9 @@
 
 # Things to be careful about
 - Dependencies in CMakeLists (some header files may depend on other ones), we need to include all files for compilation to be possible
+
+# Improvements
+- `Visitor` pattern to separate the algorithm (in this case, the LU decomposition) from the object structure (the different schemes) on which it operates.
+- Implement smart pointers throughout library e.g. `ThomasAlgorithm.hpp` which uses pointers and we need to be careful with memory management.
+- Check that `CrankNicolson` or `theta` method indeed use the `LU decomposition` or `Thomas algorithm`.
 

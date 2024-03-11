@@ -48,3 +48,7 @@
 4. 2018 - Duffy - Financial Instrument Pricing
 5. 2012 - Capinski - Numerical Methods in Finance
 6. Joshi Book on design patterns
+
+# Things to be careful about
+- Dependencies in CMakeLists (some header files may depend on other ones), we need to include all files for compilation to be possible
+

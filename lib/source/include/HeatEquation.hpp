@@ -14,6 +14,7 @@
 #include "BlackScholesModel.hpp"
 #include "Option.hpp"
 #include "ParabolicPDE.hpp"
+#include <memory>
 
 /**
  * @brief Heat equation class (special case of parabolic PDE)
@@ -22,9 +23,11 @@
 class HeatEq : public ParabPDE
 {
     public:
-        BSModel* PtrModel;
-        Option* PtrOption;
-        HeatEq(BSModel* PtrModel_, Option* PtrOption_);
+
+        // Smart pointers
+        std::unique_ptr<BSModel> PtrModel;
+        std::unique_ptr<Option> PtrOption;
+        HeatEq(std::unique_ptr<BSModel> PtrModel_, std::unique_ptr<Option> PtrOption_);
 
         double a(double t, double x);
         double b(double t, double x);

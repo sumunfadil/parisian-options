@@ -11,9 +11,9 @@
 #include "BlackScholesEquation.hpp"
 #include <cmath>
 
-BSEq::BSEq(BSModel* PtrModel_, Option* PtrOption_)
+BSEq::BSEq(std::unique_ptr<BSModel> PtrModel_, std::unique_ptr<Option> PtrOption_)
+    : PtrModel(std::move(PtrModel_)), PtrOption(std::move(PtrOption_))
 {
-    PtrModel = PtrModel_; PtrOption = PtrOption_;
     T = PtrOption->T;
     xl = PtrOption->zl;
     xu = PtrOption->zu;
@@ -48,12 +48,12 @@ double BSEq::f(double z)
 
 double BSEq::fl(double t)
 {
-    return PtrOption->LowerCondition(PtrModel, t);
+    return PtrOption->LowerCondition(PtrModel.get(), t);
 }
     
 double BSEq::fu(double t)
 {
-    return PtrOption->UpperCondition(PtrModel, t);
+    return PtrOption->UpperCondition(PtrModel.get(), t);
 }
 
 

@@ -20,6 +20,10 @@
 class ParabPDE
 {
     public: 
+
+        // Virtual destrctor
+        virtual ~ParabPDE() {}
+
         // Domain: [0,T]x[xl,xu]
         double T, xl, xu;
 

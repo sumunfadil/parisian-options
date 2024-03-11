@@ -20,6 +20,10 @@
 class LCP
 {
     public:
+
+        // Virtual destrctor
+        virtual ~LCP() {}
+
         ParabPDE* PtrPDE;
         virtual double g(double t, double x) = 0;
 };

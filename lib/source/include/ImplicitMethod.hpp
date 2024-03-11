@@ -1,23 +1,9 @@
-/**
- * @file ImplicitMethod.hpp
- * @author Sumun, M. Fadil
- * @brief Implicit Method
- * @version 0.1
- * @date 2024-03-04
- * 
- * @copyright Copyright (c) 2024
- * 
- */
 #ifndef IMPLICITMETHOD_HPP
 #define IMPLICITMETHOD_HPP
 
 #include "FiniteDifferenceMethod.hpp"
 #include "Matrix.hpp"
-
-enum SolutionMethod {
-    LU_DECOMPOSITION,
-    THOMAS_ALGORITHM
-};
+#include "Visitor.hpp"
 
 /**
  * @brief Implicit finite-difference scheme
@@ -25,15 +11,8 @@ enum SolutionMethod {
  */
 class ImplicitScheme : public FDMethod
 {
-    private:
-        SolutionMethod solutionMethod;
-
     public:
-        void SetSolutionMethod(SolutionMethod method) 
-        {
-            solutionMethod = method;
-        }
-
+        Visitor* visitor;
         /**
          * @brief Construct a new Implicit Scheme object
          * 
@@ -41,8 +20,10 @@ class ImplicitScheme : public FDMethod
          * @param imax_ 
          * @param jmax_ 
          */
-        ImplicitScheme(ParabPDE* PtrPDE_, int imax_, int jmax_)
-            : FDMethod(PtrPDE_, imax_, jmax_) {}
+        ImplicitScheme(ParabPDE* PtrPDE_, int imax_, int jmax_);
+
+        Vector A(int i, Vector q);
+        Vector w(int i);
 
         virtual double A(int i, int j) = 0;
         virtual double B(int i, int j) = 0;
@@ -52,26 +33,7 @@ class ImplicitScheme : public FDMethod
         virtual double F(int i, int j) = 0;
         virtual double G(int i, int j) = 0;
 
-        Vector w(int i);
-        Vector A(int i, Vector q);
-
-
-        /**
-         * @brief LU Decomposition 
-         * 
-         * @param i 
-         * @param q 
-         * @return Vector 
-         */
-        Vector LUDecomposition(int i, Vector q);
-
-        /**
-         * @brief Thomas algotithm O(n) 
-         * 
-         * @param q 
-         * @return Vector 
-         */
-        Vector ThomasAlgorithm(int i, Vector q);
+        Vector accept(Visitor* visitor, int i, Vector q);
 
         /**
          * @brief Solve PDE

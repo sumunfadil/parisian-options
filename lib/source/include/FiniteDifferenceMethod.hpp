@@ -20,6 +20,10 @@ typedef vector<double> Vector;
 class FDMethod
 {
     public:
+
+        // Virtual destrctor
+        virtual ~FDMethod() {} 
+
         // Pointer to a parabolic PDE object
         ParabPDE* PtrPDE;
         // The number of time and spatial intervals

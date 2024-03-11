@@ -24,6 +24,9 @@ class Option
     public:
         double T, zl, zu;
 
+        // Virtual destrctor
+        virtual ~Option() {}
+
         virtual double Payoff(double z) = 0;
         // Boundary conditions often make use of model parameters
         // TODO: Pass pointer to AssetModel class

@@ -10,10 +10,9 @@
  */
 #include "HeatEquation.hpp"
 
-HeatEq::HeatEq(BSModel* PtrModel_, Option* PtrOption_)
+HeatEq::HeatEq(std::unique_ptr<BSModel> PtrModel_, std::unique_ptr<Option> PtrOption_)
+    : PtrModel(std::move(PtrModel_)), PtrOption(std::move(PtrOption_))
 {
-    PtrModel = PtrModel_;
-    PtrOption = PtrOption_;
     T = PtrOption->T;
     xl = X(0.0, PtrOption->zl);
     xu = X(0.0, PtrOption->zu);
@@ -46,12 +45,12 @@ double HeatEq::f(double x)
 
 double HeatEq::fl(double t)
 {
-    return V(t, PtrOption->LowerCondition(PtrModel, t));
+    return V(t, PtrOption->LowerCondition(PtrModel.get(), t));
 }
 
 double HeatEq::fu(double t)
 {
-    return V(t, PtrOption->UpperCondition(PtrModel, t));
+    return V(t, PtrOption->UpperCondition(PtrModel.get(), t));
 }
 
 double HeatEq::Z(double t, double x)

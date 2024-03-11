@@ -1,0 +1,9 @@
+<map id="source/include/ExplicitMethod.hpp" name="source/include/ExplicitMethod.hpp">
+<area shape="rect" id="Node000001" title="Explicit finite&#45;difference method." alt="" coords="5,5,226,32"/>
+<area shape="rect" id="Node000002" href="$_finite_difference_method_8hpp.html" title="Finite&#45;difference method for Parabolic PDEs." alt="" coords="26,80,205,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,33,118,64,113,64,113,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="31,155,86,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,109,80,144,75,141,103,106"/>
+<area shape="rect" id="Node000004" href="$_parabolic_p_d_e_8hpp.html" title=" " alt="" coords="111,155,238,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="128,106,157,141,152,144,124,109"/>
+</map>

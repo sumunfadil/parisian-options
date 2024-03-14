@@ -5,7 +5,7 @@ project(FDMApp
     DESCRIPTION "Description"
     LANGUAGES CXX)
 
-set(Librarypath "C:/Users/SUMUN/OneDrive - London School of Economics/Research/Code/CPP_LSE/parisian-options/lib/source")
+set(Librarypath "C:/Users/fadil/OneDrive - London School of Economics/2024/Research/Code/parisian-options/lib/source")
 
 # Target
 add_executable(FDMApp main.cpp
